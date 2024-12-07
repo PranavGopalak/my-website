@@ -1,0 +1,164 @@
+/* style.css */
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #4CAF50;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #000;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/featured/1600x400?nature') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Quote Styles */
+.quote-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.quote-container blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+    position: relative;
+    color: #555;
+}
+
+.quote-container blockquote::before {
+    content: open-quote;
+    font-size: 4em;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    color: #ccc;
+}
+
+.quote-container cite {
+    display: block;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #888;
+}
+
+.quote-container button {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
